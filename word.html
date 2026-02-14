@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Love Letter 💌</title>
+<link rel="shortcut icon" href="envelope.png" type="image/x-icon">
+<link rel="stylesheet" href="word.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>💘 Love Message for Kuttachii</h1>
+
+  <div id="message" class="message-box">
+    Click the button to feel the love ❤️
+  </div>
+
+  <button onclick="generateLove()">Generate Message</button>
+</div>
+
+<script>
+const messages = [
+  "You are the reason my heart smiles every day ❤️",
+  "Every moment with you is my favorite moment 💕",
+  "You make my world brighter just by being in it ✨",
+  "I never knew what love was until I met you 💖",
+  "Your smile is my favorite view 😍",
+  "With you, everything feels right 💘",
+  "You are my today and all of my tomorrows 💝",
+  "My heart chose you, and it will always choose you ❤️"
+];
+
+function generateLove(){
+  const box = document.getElementById("message");
+
+  const randomIndex = Math.floor(Math.random() * messages.length);
+
+  box.style.animation = "none";
+  box.offsetHeight; // re-trigger animation
+  box.style.animation = "pop .4s ease";
+
+  box.textContent = messages[randomIndex];
+}
+</script>
+
+</body>
+</html>

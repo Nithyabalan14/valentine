@@ -1,0 +1,81 @@
+ body {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: lightpink;
+            box-shadow: 2px 4px 6px 4px deeppink;
+            height: 430px;
+            width: 300px;
+            animation: pulse 1.3s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 20, 147, 0.7);
+            }
+        }
+
+        form label input {
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            border: 1px solid deeppink;
+            outline: none;
+        }
+
+        form ::placeholder {
+            color: deeppink;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        form label {
+            color: deeppink;
+            font-size: 18px;
+            font-weight: bold;
+            font-variant: small-caps;
+            text-align: center;
+        }
+
+        form h1 {
+            color: deeppink;
+            font-size: 35px;
+            font-variant: small-caps;
+            text-align: center;
+        }
+
+        form a {
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            background-color: white;
+            color: deeppink;
+            font-size: 18px;
+            border: 1px solid deeppink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        form a:hover {
+            box-shadow: 1px 1px 3px 2px deeppink;
+        }
